@@ -55,9 +55,9 @@ def print_mat(m, s):
 				palin_substr = s[row:col + 1]
 				row_str += palin_substr + '\t' if col != len(m[0]) - 1 else palin_substr + '\t]'
 			elif is_palin is None:
-				row_str += '~\t' if col != len(m[0]) - 1 else '~\t]'
+				row_str += '.\t' if col != len(m[0]) - 1 else '.\t]'
 			elif is_palin is False:
-				row_str += 'X\t' if col != len(m[0]) - 1 else 'X\t]'
+				row_str += '~\t' if col != len(m[0]) - 1 else '~\t]'
 		print(row_str)
 
 if __name__ == '__main__':
